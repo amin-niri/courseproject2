@@ -1,0 +1,188 @@
+<html>
+
+<head>
+
+<title>Welcome!</title>
+
+<style type="text/css">
+
+
+body{
+  background-color: black;
+}
+#cf {
+  position:relative;
+  height:auto;
+  width:auto;
+  margin: 0 auto;
+}
+
+#cf img {
+	width: 1440px;
+	height: 750px;
+  position:absolute;
+  left:-10px;
+  top: -10px;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
+}
+
+#cf img.top:hover {
+  opacity:0;
+}
+
+
+#cf7_controls{
+  position: absolute;
+  margin-left: auto;
+  left: 596px;
+  top: 680px;
+}
+
+#welcome{
+  position: absolute;
+  margin: 0 auto;
+  left: 660px;
+}
+
+
+  #axo{
+    color: #FFF;
+      background-color: #EC523F;
+      padding: 8px 15px;
+      border-radius: 2px;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-family: "Open Sans",Arial,sans-serif;
+      margin-top: 590px;
+      position: absolute;
+      left: 680px;
+  }
+
+  #info{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 690px;
+  }
+
+#title{
+  position: absolute;
+  color: white;
+  margin: 0 auto;
+  left: 95px;
+  top: 80px;
+  font-size: 35px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.css-slideshow figcaption{
+  position: absolute;
+  top: 0;
+  color: #fff;
+  background: rgba(0,0,0, .3);
+  font-size: .8em;
+  padding: 8px 450px;
+  opacity: 0;
+  transition: opacity .5s;
+}
+.css-slideshow:hover figure figcaption{
+  transition: opacity .5s;
+  opacity: 1;
+}
+
+
+</style>
+
+<script type="text/javascript">
+
+	function opacone(){
+		picture1.style.WebkitTransition = 'opacity 3s';
+    picture2.style.opacity="0";
+    picture3.style.opacity="0";
+    picture4.style.opacity="0";
+		picture1.style.opacity="1";
+    title.style.color="white";
+	}
+
+  function opactwo(){
+    picture2.style.WebkitTransition = 'opacity 3s';
+    picture1.style.opacity="0";
+    picture3.style.opacity="0";
+    picture4.style.opacity="0";
+    picture2.style.opacity="1";
+    title.style.color="green";
+  }
+
+  function opacthree(){
+    picture3.style.WebkitTransition = 'opacity 3s';
+    picture1.style.opacity="0";
+    picture2.style.opacity="0";
+    picture4.style.opacity="0";
+    picture3.style.opacity="1";
+    title.style.color="red";
+  }
+
+  function opacfour(){
+    picture4.style.WebkitTransition = 'opacity 3s';
+    picture1.style.opacity="0";
+    picture3.style.opacity="0";
+    picture2.style.opacity="0";
+    picture4.style.opacity="1";
+    title.style.color="blue";
+  }
+
+
+</script>
+  <link href='http://fonts.googleapis.com/css?family=Orbitron:500' rel='stylesheet' type='text/css'>
+</head>
+
+
+<body>
+
+
+<div id="cf" class="shadow">
+  <img id='picture2' src="slide2.jpg" />
+  <img id='picture3' src="slide3.jpg" />
+  <img id='picture4' src="gopro.jpg" />
+  <img id='picture1' src="slide1.jpg" />
+
+
+</div>
+<p id="cf7_controls">
+  <button onclick="opacone()">Image 1</button>
+  <button onclick="opactwo()">Image 2</button>
+  <button onclick="opacthree()">Image 3</button>
+  <button onclick="opacfour()">Image 4</button>
+</p>
+
+<img id="info" src="info.jpg"/>
+
+
+<button id="axo">Enter..</button>
+<script type="text/javascript">
+
+    document.getElementById("axo").onclick = function () {
+    location.href = "../index.html";
+          };
+
+          </script>
+
+
+<h3 id="title">Welcome to UBC <br><br>Tech Talks</h3>
+
+<div class="css-slideshow">
+  <figure>
+    <figcaption><strong>NOTE!</strong> ---The page you are about to enter is made by UBC students in Comp sci 101. If you proceed to click the enter button, it will redirect you to the home page of the blog.</figcaption> 
+  </figure>
+  </div>
+
+</body>
+
+
+
+
+</html>

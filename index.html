@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+	<head>
+
+		<meta charset="UTF-8">
+		<title>Tech Talk</title>
+
+
+	<style type="text/css">
+	body{
+		text-align: center;
+	}
+	.container{	
+		padding: 50px;	
+		margin: auto;
+		width: 410px;
+		font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+		font-size: 14px;
+			
+	}
+
+	.container img{
+		
+		width: 350px;
+
+	}
+
+	#hi{
+		font-family: 'Orbitron', sans-serif;
+		font-size: 25px;
+	}
+
+	.maincontainer{
+		height: 500px;
+		background-image: url('imgs/library.jpg');
+		margin-top: 5px;
+	}
+
+	#navbar{
+		height: 30px;
+		margin-top: -15px;
+		margin-bottom: 10px;
+	}
+
+	#hi img{
+		width: 40px;
+		margin-right: 60px;
+	}
+
+	#latestposts{
+		margin-bottom: 50px;
+		font-family: 'Orbitron', sans-serif;
+		font-size: 20px;
+	}
+
+	#mainpage{
+
+	}
+
+	#axo{
+		color: #FFF;
+    	background-color: #EC523F;
+    	padding: 5px 15px;
+    	border-radius: 2px;
+    	text-transform: uppercase;
+    	font-weight: 100;
+    	font-family: "Open Sans";
+    	margin-top: 440px;
+	}
+
+	#axo:hover{
+		box-shadow: 1px 1px 1px rgba(0,0,0,0.29), inset 0px 0px 2px;
+	}
+	</style>
+
+	<link href='http://fonts.googleapis.com/css?family=Orbitron:500' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="pure-release-0.5.0/pure-min.css">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+
+	</head>
+
+	<body>
+		<div id="navbar"><h4 id="hi"><img src="imgs/logo.png">UBC Tech Talks</h4></div>
+
+		<div class="pure-menu pure-menu-open pure-menu-horizontal"> 
+			
+			<ul>
+				<a href="#" class="pure-menu-heading"></a>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="archive.html">Archive</a></li>
+				<li><a href="#">Extra</a></li>
+
+			</ul>
+		</div>
+
+		<div class="maincontainer">
+			<div id="mainpage">
+				<button id="axo">Click to see all posts</button>
+					<script type="text/javascript">
+
+					document.getElementById("axo").onclick = function () {
+					location.href = "archive.html";
+					};
+
+					</script>
+			</div>
+		</div>
+
+		<div class="pointdown">
+			<p>
+
+			<i class="fa fa-long-arrow-down"></i>
+
+			</p>
+		</div>
+
+		<div class="container">
+			<div id="latestposts">Latest Blog Posts</div>
+
+<!--START OF BLOG POST ENTRIES!-->			
+			<div> <!--New Blog Entry!-->
+				<hr>
+				<div> <a href="productinfo1.html"> <img src="imgs/iwatch.jpg" ></a> </div>
+				<div>
+				<h3>iWatch</h3>
+				<p>The iWatch is a truly innovate piece. Although electronic watches like this has been under development for many many years, this one might have some fate in becoming a big success. Apple has thrown in some creative features to attract users.</p>
+				</div>
+			</div> <!--New Blog Entry!-->
+
+			<div> <!--New Blog Entry!-->
+				<hr>
+				<div> <a href="productinfo2.html"> <img src="imgs/googleglass.jpg" ></a> </div>
+				<div>
+				<h3>Google Glass</h3>
+				<p>It seems like there isn’t too much practicality with wearable eye technology yet, but it is still an innovative piece as it is the first of it’s kind to become this popular. As time goes on, we should expect more capabilities with eye technology, but as of now, in my opinion this seems to capture the attention of those who want to stay ahead of everyone else in terms of technology. I personally can’t see people wearing this around for a while, not until it looks less dorky.</p>
+				</div>
+			</div> <!--New Blog Entry!-->
+
+			<div> <!--New Blog Entry!-->
+				<hr>
+				<div> <a href="productinfo3.html"> <img src="imgs/parrot ar drone.jpg" ></a> </div>
+				<div>
+				<h3>Parrot Ar Drone 2.0</h3>
+				<p>This is one of the products we see today that is getting very popular very quickly. Drones are going to become a huge market in the coming years. We already see many of these drones being used to record videos, such as real estate 360 views of the homes realtors try to sell. I think you can accomplish many more ambitious things with drones such as what facebook is doing, trying to provide internet to countries that can’t afford it with self-sustaining drones that spread internet. These machines are very cool and very exciting to see what they will be used for in the next few years. </p>
+				</div>
+			</div> <!--New Blog Entry!-->
+
+<!--END OF BLOG POST ENTRIES!-->		
+
+		</div>
+
+
+	</body>
+</html>
