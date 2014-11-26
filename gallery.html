@@ -8,26 +8,18 @@
 	body{
 		text-align: center;
 	}
-	.container{	
-		padding: 50px;	
-		margin: auto;
-		width: 410px;
-		font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
-		font-size: 14px;
-			
-	}
-
-	.container img{
-		
-		width: 350px;
-
-	}
 
 	#hi{
 		font-family: 'Orbitron', sans-serif;
 		font-size: 25px;
 	}
-
+	
+	#latestposts{
+		margin-bottom: 50px;
+		font-family: 'Orbitron', sans-serif;
+		font-size: 28px;
+	}
+	
 	.maincontainer{
 		height: 500px;
 		background-image: url('imgs/library.jpg');
@@ -66,18 +58,39 @@
 		box-shadow: 1px 1px 1px rgba(0,0,0,0.29), inset 0px 0px 2px;
 	}
 	
+	.gallery{
+		margin-left: auto;
+		margin-right: auto;
+		width: 70%
+	}
+	
 	.container { 
-		position: fixed;
-		left: 0;
-		height: 100px;
-		width: 100px;
-		margin: 10px;
+		float: left;
+		padding: 25;
+		height: 200px;
+		width: 200px;
 		}
 		
 	.container img{
 		width: 100%;
 		height: auto;
-	}	
+	}
+
+	.container img:hover{
+		-webkit-transform: scale(2);
+		-moz-transform: scale(2);
+		-o-transform: scale(2);
+		transform: scale(2);
+		transition: all 0.3s;
+		-webkit-transition: all 0.3s;  
+		}
+		
+	.sidebarleft{
+		position: fixed;
+		bottom: 10px;
+		left: 10px;
+	}
+	
 	</style>
 
 	<link href='http://fonts.googleapis.com/css?family=Orbitron:500' rel='stylesheet' type='text/css'>
@@ -100,9 +113,6 @@
 		</div>
 
 		<div class="maincontainer">
-			<div id="mainpage">
-				<button id="axo">Click to see all</button>
-			</div>
 		</div>
 	
 
@@ -110,7 +120,48 @@
 </head>
 
 <body>
+	<br><br><br>
+	<div id="latestposts">Extra Content<hr></div>
+
+	<div class="gallery">
 		<div class="container"><img src="imgs/oculus.jpg"/></div>
-		
+		<div class="container"><img src="imgs/driverlesscar.jpg"/></div>
+		<div class="container"><img src="imgs/google-driverless-car.jpg"/></div>
+		<div class="container"><img src="imgs/iwatch.jpg"/></div>
+		<div class="container"><img src="imgs/3d-Printed-Heart.jpg"/></div>
+		<div class="container"><img src="imgs/amazon-prime-air-drones.png"/></div>
+		<div class="container"><img src="imgs/glassgirl.jpg"/></div>
+		<div class="container"><img src="imgs/glass.jpg"/></div>
+		<div class="container"><img src="imgs/oculus-rift-at-intel-booth.jpg"/></div>
+		<div class="container"><img src="imgs/Birdly-laying-on-unit.jpg"/></div>
+		<div class="container"><img src="imgs/iwatch2.jpg"/></div>
+		<div class="container"><img src="imgs/parrotdrone2.jpg"/></div>
+		<div class="container"><img src="imgs/googleglass2.jpeg"/></div>
+		<div class="container"><img src="imgs/3Dprinter.jpg"/></div>
+		<div class="container"><img src="imgs/passengers.jpg"/></div>
+		<div class="container"><img src="imgs/driverless-car.jpg"/></div>
+		<div class="container"><img src="imgs/parrot ar drone.jpg"/></div>
+		<div class="container"><img src="imgs/iwatch.jpg"/></div>
+		<div class="container"><img src="imgs/iwatch.jpg"/></div>
+		<div class="container"><img src="imgs/iwatch.jpg"/></div>
+	</div>
+	
+	<div class="sidebarleft"><a href="#" class="scrollup"> <img src="imgs/arrow-up-circle.png"/> </a> </div>
 </body>
+
+<!--Links-->
+<!--
+http://cyborgs.us/wp-content/uploads/2014/03/3d-Printed-Heart.jpg
+http://i2.wp.com/www.roadtovr.com/wp-content/uploads/2014/06/oculus-rift-at-intel-booth.jpg
+http://www.theriftarcade.com/wp-content/uploads/2014/05/Birdly-laying-on-unit.jpg
+http://www.glassappsource.com/wp-content/uploads/2014/04/GoogleGlass.jpg
+http://snowbrains.com/wp-content/uploads/2014/10/Google-glass.jpeg
+http://cdn.blog.cpcstrategy.com/wp-content/uploads/2013/12/amazon-prime-air-drones.png
+https://matteroffactsblog.files.wordpress.com/2013/11/driverless-car.jpg
+http://www.manufacturing.net/sites/manufacturing.net/files/driverless-car.jpg
+
+
+
+-->
+
 </html>
