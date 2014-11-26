@@ -136,12 +136,30 @@ body{
   }
 
 
+    function startLoop()
+    {
+      loopsies();
+      setInterval(loopsies, 25000)
+
+    }
+
+    function loopsies(){
+
+        setTimeout(opacone, 5000);
+        setTimeout(opactwo, 10000);
+        setTimeout(opacthree, 15000);
+        setTimeout(opacfour, 20000);
+
+    }
+
+  
+
 </script>
   <link href='http://fonts.googleapis.com/css?family=Orbitron:500' rel='stylesheet' type='text/css'>
 </head>
 
 
-<body>
+<body onload="startLoop()">
 
 
 <div id="cf" class="shadow">
